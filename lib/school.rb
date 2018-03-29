@@ -1,12 +1,12 @@
 # code here!
 class School
-  attr_reader :name, :roaster
+  attr_reader :name, :roster
   def initialized(name)
     @name = name
-    @roaster = {}
+    @roster = {}
   end
 
   def add_student(name, grade)
-    roaster[grade] << name
+    roster[grade] << name
   end
 end
